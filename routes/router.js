@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const main = require('../controller/MainController');
 
+router.get('/', main.index);
 router.get('/index', main.index);
 router.get('/tables', main.tables);
 router.get('/charts', main.charts);
