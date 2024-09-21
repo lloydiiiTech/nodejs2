@@ -1,0 +1,55 @@
+<div class="page-content">
+    <!-- Page Header -->
+    <div class="page-header no-margin-bottom">
+      <div class="container-fluid">
+        <h2 class="h5 no-margin-bottom">Calendar</h2>
+      </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container-fluid">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Calendar</li>
+      </ul>
+    </div>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="calendar block">
+              <div class="title"><strong>Calendar Example</strong></div>
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Include FullCalendar -->
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+  
+  <!-- Initialize FullCalendar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth', // You can change to 'timeGridWeek', 'timeGridDay' as per your requirement
+        events: [
+          {
+            title: 'Event 1',
+            start: '2024-09-10',
+            end: '2024-09-12'
+          },
+          {
+            title: 'Event 2',
+            start: '2024-09-15',
+            allDay: true
+          }
+        ]
+      });
+      calendar.render();
+    });
+  </script>
+  

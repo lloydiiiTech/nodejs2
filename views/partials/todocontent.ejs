@@ -1,0 +1,137 @@
+<div class="page-content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <h2 class="h5 no-margin-bottom">To-Do List</h2>
+    </div>
+  </div>
+  
+  <section class="no-padding-top no-padding-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="todo-block block">
+            <div class="todo-details d-flex align-items-end justify-content-between">
+              <div class="title">
+                <div class="icon"><i class="icon-check"></i></div><strong>Finish Client Proposal</strong>
+              </div>
+              <div class="todo-priority dashtext-1">Priority: High</div>
+            </div>
+            <div class="todo-deadline">
+              <small>Due: Today, 5:00 PM</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="todo-block block">
+            <div class="todo-details d-flex align-items-end justify-content-between">
+              <div class="title">
+                <div class="icon"><i class="icon-check"></i></div><strong>Review Project Plan</strong>
+              </div>
+              <div class="todo-priority dashtext-2">Priority: Medium</div>
+            </div>
+            <div class="todo-deadline">
+              <small>Due: Tomorrow, 12:00 PM</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="todo-block block">
+            <div class="todo-details d-flex align-items-end justify-content-between">
+              <div class="title">
+                <div class="icon"><i class="icon-check"></i></div><strong>Prepare Invoice</strong>
+              </div>
+              <div class="todo-priority dashtext-3">Priority: Low</div>
+            </div>
+            <div class="todo-deadline">
+              <small>Due: 3 Days Later</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="todo-block block">
+            <div class="todo-details d-flex align-items-end justify-content-between">
+              <div class="title">
+                <div class="icon"><i class="icon-check"></i></div><strong>Organize Team Meeting</strong>
+              </div>
+              <div class="todo-priority dashtext-4">Priority: High</div>
+            </div>
+            <div class="todo-deadline">
+              <small>Due: 1 Week Later</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="no-padding-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="todo-chart block no-margin-bottom">
+            <h3 class="chart-title">Tasks Overview</h3>
+            <canvas id="taskOverviewChart"></canvas>
+          </div>
+          <div class="todo-chart block">
+            <h3 class="chart-title">Priority Distribution</h3>
+            <canvas id="priorityDistributionChart"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="line-chart block">
+            <h3 class="chart-title">Task Completion Over Time</h3>
+            <canvas id="taskCompletionChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="no-padding-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="todo-stats-block block d-flex">
+            <div class="todo-stats d-flex">
+              <div class="todo-stats-arrow low"><i class="fa fa-caret-down"></i></div>
+              <div class="todo-stats-content"><strong class="d-block">8</strong><span class="d-block">Tasks Completed</span>
+                <div class="progress progress-template progress-small">
+                  <div role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="todo-stats d-flex">
+              <div class="todo-stats-arrow height"><i class="fa fa-caret-up"></i></div>
+              <div class="todo-stats-content"><strong class="d-block">12</strong><span class="d-block">Tasks Remaining</span>
+                <div class="progress progress-template progress-small">
+                  <div role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="todo-stats-block block d-flex">
+            <div class="todo-stats"><strong class="d-block">3</strong><span class="d-block">Overdue Tasks</span>
+              <div class="progress progress-template progress-small">
+                <div role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-1"></div>
+              </div>
+            </div>
+            <div class="todo-stats d-flex justify-content-between text-center">
+              <div class="item"><strong class="d-block strong-sm">2</strong><span class="d-block span-sm">High Priority</span>
+                <div class="line"></div><small>+1</small>
+              </div>
+              <div class="item"><strong class="d-block strong-sm">5</strong><span class="d-block span-sm">Low Priority</span>
+                <div class="line"></div><small>+2</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="todo-line-chart block">
+            <h3 class="chart-title">High Priority Tasks</h3>
+            <canvas id="highPriorityTaskChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -5,6 +5,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/', routes);
-app.listen(1011, 'localhost',()=>{
+app.use(express.static('public'));
+app.listen(1010, 'localhost',()=>{
     console.log('server running');
 });

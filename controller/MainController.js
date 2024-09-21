@@ -2,19 +2,33 @@ const pal ={
     index:(req, res)=>{
         res.render('index');
     },
-    address:(req, res)=>{
-        res.render('address');
+    tables:(req, res)=>{
+        res.render('tables');
     },
-    contact:(req, res)=>{
-        res.render('contact');
+    charts:(req, res)=>{
+        res.render('charts');
     },
-    fullname:(req, res)=>{
-        res.render('fullname');
+    forms:(req, res)=>{
+        res.render('forms');
     },
-    moreinfo:(req, res)=>{
-        res.render('moreinfo');
+    login:(req, res)=>{
+        res.render('login');
     },
-
+    register:(req, res)=>{
+        res.render('register');
+    },
+    forget:(req, res)=>{
+        res.render('forgetpassword');
+    },
+    calendar:(req, res)=>{
+        res.render('calendar');
+    },
+    activities:(req, res)=>{
+        res.render('activities');
+    },
+    todo:(req, res)=>{
+        res.render('todo');
+    }
     
 };
 module.exports = pal;
